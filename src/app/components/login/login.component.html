@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit($event)">
+  <div>
+    <label for="username">username:</label>
+    <input type="test" id="username" [minLength]="5" [maxlength]="12" [(ngModel)]="username" name="username" required />
+  </div>
+
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" [minLength]="5" [maxlength]="12" [(ngModel)]="password" name="password" required />
+  </div>
+
+  <button type="submit">Log In</button>
+</form>
