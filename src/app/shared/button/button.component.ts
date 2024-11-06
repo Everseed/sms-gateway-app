@@ -12,7 +12,7 @@ type ButtonProps = {
 };
 
 @Component({
-  selector: 'app-button',
+  selector: 's2m-button',
   standalone: true,
   imports: [CommonModule],
   template: `
@@ -20,7 +20,7 @@ type ButtonProps = {
                 <ng-content></ng-content>
             </button>
 `,
-  styleUrl: './button.component.scss',
+  styles: ``,
 })
 export class ButtonComponent implements OnInit {
   impact = input<ButtonProps['impact']>('none');
