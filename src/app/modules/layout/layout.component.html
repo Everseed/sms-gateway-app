@@ -1,0 +1,23 @@
+<div class="flex h-screen w-full overflow-hidden">
+    <!-- Sidebar -->
+    <s2m-sidebar></s2m-sidebar>
+  
+    <div class="flex grow flex-col content-start overflow-hidden bg-card">
+      <!-- Header -->
+      <s2m-navbar></s2m-navbar>
+      <!-- main content -->
+      <div
+        id="main-content"
+        class="scrollbar-thumb-rounded scrollbar-track-rounded grow overflow-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-muted">
+        <div class="mx-auto px-4 py-4 sm:px-8 lg:container">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+  
+      <!-- footer -->
+      <s2m-footer></s2m-footer>
+  
+      <!-- Bottom bar -->
+      <!-- <s2m-bottom-navbar></s2m-bottom-navbar> -->
+    </div>
+  </div>

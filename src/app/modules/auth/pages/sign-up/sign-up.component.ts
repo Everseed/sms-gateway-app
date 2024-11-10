@@ -6,7 +6,7 @@ import { ButtonComponent } from '../../../../shared/button/button.component';
 
 
 @Component({
-  selector: 'app-sign-up',
+  selector: 's2m-sign-up',
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.scss'],
   standalone: true,
