@@ -4,6 +4,8 @@ import { DashboardComponent } from './dashboard.component';
 import { MainComponent } from './pages/main/main.component';
 
 
+
+
 const routes: Routes = [
   {
     path: '',

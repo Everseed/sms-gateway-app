@@ -18,5 +18,5 @@ import { ResponsiveHelperComponent } from './shared/responsive-helper/responsive
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Portal';
 }

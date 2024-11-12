@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { NgClass } from '@angular/common';
 import { ClickOutsideDirective } from '../../../../../shared/directives/click-outside.directive';
 import { AngularSvgIconModule } from 'angular-svg-icon';
+import { ThemeService } from '../../../../../core/services/theme.service';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
@@ -86,8 +87,8 @@ export class ProfileMenuComponent implements OnInit {
   ];
 
   public themeMode = ['light', 'dark'];
-  // public themeService: ThemeService
-  constructor() {}
+
+  constructor(public themeService: ThemeService) {}
 
   ngOnInit(): void {}
 
@@ -96,15 +97,15 @@ export class ProfileMenuComponent implements OnInit {
   }
 
   toggleThemeMode() {
-    /* this.themeService.theme.update((theme) => {
+    this.themeService.theme.update((theme) => {
       const mode = !this.themeService.isDark ? 'dark' : 'light';
       return { ...theme, mode: mode };
-    }); */
+    });
   }
 
   toggleThemeColor(color: string) {
-    /* this.themeService.theme.update((theme) => {
+    this.themeService.theme.update((theme) => {
       return { ...theme, color: color };
-    }); */
+    });
   }
 }
